@@ -1,7 +1,7 @@
 //your JS code here. If required.
 const calculator = document.querySelector(".calculator");
 
-const input = document.getElementById("input");
+const input = document.getElementById("display");
 
 function addToInput(value) {
   input.value += value;
@@ -34,8 +34,12 @@ document.getElementById("divi").addEventListener("click", () => addToInput("/"))
 document.getElementById("op").addEventListener("click", () => addToInput("("));
 document.getElementById("cl").addEventListener("click", () => addToInput(")"));
 document.getElementById(".").addEventListener("click", () => addToInput("."));  
+document.getElementById("-").addEventListener("click", () => addToInput("-"));  
 
-
-document.getElementById("c").addEventListener("click", clearInput);
+document.getElementById("C").addEventListener("click", clearInput);
 document.getElementById("back").addEventListener("click", backspace);
 document.getElementById("equal").addEventListener("click", calculate);
+
+
+
+
